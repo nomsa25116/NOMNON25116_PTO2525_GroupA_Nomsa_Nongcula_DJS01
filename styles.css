@@ -68,3 +68,127 @@ header {
 #search-icon {
     width: 20px;
 }
+/*===============
+    Main
+===============*/
+
+main {
+    background-color: var(--very-light-gray-color);
+    padding: var(--normal-padding) var(--large-padding);
+    min-height: 90vh;
+}
+
+/* Filter section */
+
+#filter-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--normal-gap);
+    margin: 1rem 0;
+}
+
+#all-genres,
+#recently-updated {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--medium-gray-color);
+    border-radius: var(--normal-border-radius);
+}
+
+/* Card section */
+
+#card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--big-gap);
+    margin-bottom: 1rem;
+}
+/* Podcast App */
+
+.podcast-card {
+    margin-top: 1rem;
+    background-color: var(--white-color);
+    padding: var(--normal-padding);
+    border-radius: var(--normal-border-radius);
+    box-shadow: 0 2px 4px var(--light-gray-color);
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.podcast-card:hover,
+.podcast-card:active {
+    box-shadow: 0 2px 8px var(--medium-gray-color);
+    transform: translateY(-2px);
+}
+
+/* Podcast image */
+
+.podcast-image {
+    height: auto;
+    width: 100%;
+    border-radius: var(--normal-border-radius);
+    cursor: pointer;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    transition: opacity 600ms ease-in-out;
+}
+
+.podcast-image:hover,
+.podcast-image:active {
+    opacity: 0.125;
+}
+/* Podcast title */
+
+.podcast-title {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Seasons section */
+
+.seasons-section {
+    display: flex;
+    align-items: center;
+    gap: var(--small-gap);
+    margin: 0.5rem 0;
+}
+
+.seasons-icon {
+    width: 20px;
+    cursor: auto;
+}
+
+.num-seasons {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Genre section */
+
+.genre-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem var(--small-gap);
+    margin: 0.5rem 0;
+}
+
+.genre-name {
+    background-color: var(--light-gray-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.125rem 0.5rem;
+    border-radius: var(--small-border-radius);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Updated Status */
+
+.updated-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--dark-gray-color);
+    margin-top: 0.5rem;
+}
